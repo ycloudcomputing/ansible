@@ -6,7 +6,7 @@
   tasks:
   - name: install applications
      package:
-       name:
+        name:
         - htop
         - tmux
         - vim-nox 
