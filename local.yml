@@ -5,10 +5,10 @@
 
   tasks:
   - name: install applications
-     package:
-        name:
-          - htop
-          - tmux
-          - vim-nox 
+     apt:
+       name:
+         - htop
+         - tmux
+         - vim-nox 
 
 
