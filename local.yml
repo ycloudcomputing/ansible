@@ -3,12 +3,13 @@
   connection: local
   become: true
 
+
+
+ become: yes
+  become_user: amniadmin
   tasks:
-  - name: install applications
-     apt:
-       name:
-         - htop
-         - tmux
-         - vim-nox 
+    - name: Install curl
+      apt:
+        name: curl 
 
 
