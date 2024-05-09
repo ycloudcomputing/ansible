@@ -6,7 +6,7 @@
   tasks:
     - name: Install curl
       package:
-        name:
+         name:
           - curl
           - htop
 
