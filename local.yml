@@ -7,8 +7,8 @@
   - name: install applications
      package:
         name:
-        - htop
-        - tmux
-        - vim-nox 
+          - htop
+          - tmux
+          - vim-nox 
 
 
