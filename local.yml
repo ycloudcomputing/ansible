@@ -1,5 +1,5 @@
 ---
-- hosts: AMNI-Ansible01
+- hosts: localhost
   connection: local
   become: true
 
