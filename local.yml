@@ -3,13 +3,17 @@
   connection: local
   become: true
 
-
-
- become: yes
-  become_user: amniadmin
   tasks:
     - name: Install curl
-      apt:
-        name: curl 
+      package:
+        name:
+          - curl
+          - htop
 
 
+ -name: copy wallpaper file
+  copy:
+    src: file/wallpapaer.png
+    dest: /usr/share/backgrounds/ansible-wallpaper.png
+    group: root
+    group: root
