@@ -3,9 +3,9 @@
   connection: local
   become: true
 
-  tasks: 
-  -- name: install htop
-     package: 
+  tasks:
+  - name: install htop
+     package:
        name: htop
 
 
