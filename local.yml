@@ -1,17 +1,16 @@
-:---
+i:---
 - hosts: localhost
   connection: local
   become: true
 
-  tasks:
-    - name: Install curl
-      apt:
-       name: curl
+desktop_color_configuration:
+  background_color: "#FFFFFF"  # Hex code for white
+  text_color: "#000000"  # Hex code for black
+  accent_color: "#FF0000"  # Hex code for red
+  theme: "light"  # Options: "light" or "dark"
+
+package_installation:
+  - name: "curl"
+    action: "install" 
 
 
- - name: copy wallpaper file
-   copy:
-     src: file/wallpapaer.png
-     dest: /usr/share/backgrounds/ansible-wallpaper.png
-     group: root
-     group: root
