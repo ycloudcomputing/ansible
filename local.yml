@@ -9,10 +9,6 @@ desktop_color_configuration:
   accent_color: "#FF0000"  # Hex code for red
   theme: "light"  # Options: "light" or "dark"
 
-package_installation:
-  - name: "curl"
-    action: "install" 
-
 tasks:
   - name: Install htop
     apt:
