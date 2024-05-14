@@ -12,5 +12,6 @@ desktop_color_configuration:
 tasks:
   - name: Install htop
     apt:
-      name: htop
+      name: 
+        - htop
 
