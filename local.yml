@@ -13,4 +13,8 @@ package_installation:
   - name: "curl"
     action: "install" 
 
+tasks:
+  - name: Install htop
+    apt:
+      name: htop
 
