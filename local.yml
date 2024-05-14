@@ -3,15 +3,8 @@
   connection: local
   become: true
 
-desktop_color_configuration:
-  background_color: "#FFFFFF"  # Hex code for white
-  text_color: "#000000"  # Hex code for black
-  accent_color: "#FF0000"  # Hex code for red
-  theme: "light"  # Options: "light" or "dark"
-
-tasks:
-  - name: Install htop
-    apt:
-      name: 
-        - htop
+  tasks:
+   - name: Install htop
+     apt:
+      name: htop
 
